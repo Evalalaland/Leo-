@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 50px;
+        }
+        #playerImage {
+            max-width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bonne surprise à venir mon bébé ;), encore un peu de patience !</h1>
+    <img id="playerImage" src="" alt="Joueur choisi">
+    
+    <script>
+        const player = localStorage.getItem("selectedPlayer");  // Récupère le joueur choisi
+        if (player) {
+            document.getElementById("playerImage").src = "images/" + player + ".jpg";  // Affiche l'image du joueur
+        }
+    </script>
+</body>
+</html>

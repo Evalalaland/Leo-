@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 50px;
+        }
+        .kiss-button {
+            background-color: pink;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .continue-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .kiss-button:focus, .continue-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Joyeux anniversaire mon amour Léo ♥️</h1>
+    <p>J'aurais bien aimé te faire un bisou, mais en voilà un de loin 💋</p>
+    <button class="kiss-button">💋</button>
+    <br>
+    <button class="continue-button" onclick="nextPage()">Appuyer sur continuer</button>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page2.html";  // Lien vers la page suivante
+        }
+    </script>
+</body>
+</html>

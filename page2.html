@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix du Joueur</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 50px;
+        }
+        .player {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .player:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maintenant, petite question anodine, quel nom te parle le plus ?</h1>
+    <div class="players">
+        <button class="player" onclick="nextPage('Doué')">Doué</button>
+        <button class="player" onclick="nextPage('Dembélé')">Dembélé</button>
+        <button class="player" onclick="nextPage('Barcola')">Barcola</button>
+        <button class="player" onclick="nextPage('LP13')">LP13</button>
+        <button class="player" onclick="nextPage(‘Neves')">Jeves</button>
+    </div>
+
+    <script>
+        function nextPage(player) {
+            localStorage.setItem("selectedPlayer", player);  // Sauvegarde le joueur choisi
+            window.location.href = "page3.html";  // Lien vers la page de la surprise
+        }
+    </script>
+</body>
+</html>
